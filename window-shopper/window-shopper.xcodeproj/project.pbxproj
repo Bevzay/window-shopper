@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D6096BD01FE87F1A00360DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6096BCF1FE87F1A00360DD9 /* AppDelegate.swift */; };
-		D6096BD21FE87F1A00360DD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6096BD11FE87F1A00360DD9 /* ViewController.swift */; };
+		D6096BD21FE87F1A00360DD9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6096BD11FE87F1A00360DD9 /* MainVC.swift */; };
 		D6096BD51FE87F1A00360DD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6096BD31FE87F1A00360DD9 /* Main.storyboard */; };
 		D6096BD71FE87F1A00360DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6096BD61FE87F1A00360DD9 /* Assets.xcassets */; };
 		D6096BDA1FE87F1A00360DD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6096BD81FE87F1A00360DD9 /* LaunchScreen.storyboard */; };
 		D6096BE51FE87F1A00360DD9 /* window_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6096BE41FE87F1A00360DD9 /* window_shopperTests.swift */; };
 		D6096BF01FE87F1A00360DD9 /* window_shopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6096BEF1FE87F1A00360DD9 /* window_shopperUITests.swift */; };
+		D6096C001FE8820700360DD9 /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6096BFF1FE8820700360DD9 /* CurrencyTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		D6096BCC1FE87F1A00360DD9 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6096BCF1FE87F1A00360DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6096BD11FE87F1A00360DD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6096BD11FE87F1A00360DD9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D6096BD41FE87F1A00360DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6096BD61FE87F1A00360DD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6096BD91FE87F1A00360DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		D6096BEB1FE87F1A00360DD9 /* window-shopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "window-shopperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6096BEF1FE87F1A00360DD9 /* window_shopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = window_shopperUITests.swift; sourceTree = "<group>"; };
 		D6096BF11FE87F1A00360DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6096BFF1FE8820700360DD9 /* CurrencyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,9 @@
 		D6096BCE1FE87F1A00360DD9 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				D6096BFE1FE881D000360DD9 /* Views */,
+				D6096BFD1FE87FD100360DD9 /* Controller */,
 				D6096BCF1FE87F1A00360DD9 /* AppDelegate.swift */,
-				D6096BD11FE87F1A00360DD9 /* ViewController.swift */,
 				D6096BD31FE87F1A00360DD9 /* Main.storyboard */,
 				D6096BD61FE87F1A00360DD9 /* Assets.xcassets */,
 				D6096BD81FE87F1A00360DD9 /* LaunchScreen.storyboard */,
@@ -123,6 +126,22 @@
 				D6096BF11FE87F1A00360DD9 /* Info.plist */,
 			);
 			path = "window-shopperUITests";
+			sourceTree = "<group>";
+		};
+		D6096BFD1FE87FD100360DD9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6096BD11FE87F1A00360DD9 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6096BFE1FE881D000360DD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D6096BFF1FE8820700360DD9 /* CurrencyTxtField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +212,7 @@
 				TargetAttributes = {
 					D6096BCB1FE87F1A00360DD9 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					D6096BDF1FE87F1A00360DD9 = {
 						CreatedOnToolsVersion = 9.0;
@@ -259,7 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6096BD21FE87F1A00360DD9 /* ViewController.swift in Sources */,
+				D6096C001FE8820700360DD9 /* CurrencyTxtField.swift in Sources */,
+				D6096BD21FE87F1A00360DD9 /* MainVC.swift in Sources */,
 				D6096BD01FE87F1A00360DD9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,11 +446,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "window-shopper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.makeapple.window-shopper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,11 +462,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "window-shopper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.makeapple.window-shopper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
